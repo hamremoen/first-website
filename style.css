@@ -4,8 +4,9 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*homepage background image*/
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background1.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/background1.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -43,6 +44,8 @@ ul li.active a{
     float:left;
     width: 150px;
     height: auto;
+    position: absolute;
+    cursor: pointer;
 }
 
 .main{
@@ -52,7 +55,7 @@ ul li.active a{
 
 .title{
     position: absolute;
-    top: 50%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -64,7 +67,7 @@ ul li.active a{
 
 .button{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
