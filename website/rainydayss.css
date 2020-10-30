@@ -1,173 +1,262 @@
-*{
-    margin: 0;
-    padding:0;
-    font-family: 'Courier New', Courier, monospace;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+/*homepage background image*/
+.homepage {
+  background-image: url(images/background1.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
-/*homepage background image*/
-.homepage{
-    background-image: url(images/background1.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 /*logo*/
-.logo-container{
-    flex: auto;
-    float: left;
-    margin-top: 25px;
-    margin-left: 25px;
-    position: fixed;
+.logo-container {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 500px;
 }
 
-.logo-container img{
-    cursor: pointer;
-    width: 25%;
+.logo-container img {
+  cursor: pointer;
+  width: 40%;
 }
-/**/
-.navigation{
-    list-style-type: none;
-    float: right;
-    margin-top: 25px;
+/*navigation bars/top right*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-/**/
-ul li{
-    display: inline-block;
-    padding: 5px 20px;
+
+.navigation {
+  list-style-type: none;
 }
-/**/
-ul li a{
-    text-decoration: none;
-    color: black;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-    cursor: pointer;
+
+ul li {
+  display: inline-block;
+  padding: 5px 20px;
 }
-/**/
-ul li a:hover{
-    background-color: #11586A;
+/*navigation bar hoverstate*/
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  background-color: #11586a;
+  color: #fff;
+}
+/*HOMEPAGE SPECIFIC*/
+/*center of website quote/buttons*/
+.button-section{
+    display: flex;
+    justify-content: center;
+}
+.homepage-quote {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 300px;
+}
+/*WEBSITE BUTTON*/
+.m-collection {
+    border-radius: 10px;
+  border: 1px solid transparent;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.6s ease;
+  cursor: pointer;
+  font-size: 20px;
+  height: 80px;
+  width: 300px;
+  margin: 30px 0px 0px 30px;
+  box-shadow: 3px 3px 3px black;
+}
+.w-collection {
+    border-radius: 10px;
+  border: 1px solid transparent;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.6s ease;
+  cursor: pointer;
+  font-size: 20px;
+  height: 80px;
+  width: 300px;
+  margin: 30px 0px 0px 30px;
+  box-shadow: 3px 3px 3px black;
+}
+/*center of website button hover*/
+.w-collection:hover {
+  background-color: #11586a;
+  color: #fff;
+}
+
+.m-collection:hover {
+    background-color: #11586a;
     color: #fff;
+  }
+/*END OF HOMEPAGE SPECIFIC*/
+body {
+  background: #fff;
 }
-/**/
-ul ab{
-    text-decoration: none;
-    color: black;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-    margin-right: 25px;
-    cursor: pointer;
+/*COLLECTION SPECIFIC*/
+/*TITLE COLLECTION*/
+.container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 300px;
 }
-/**/
-.intro{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-/**/
-.intro h1{
-    color: rgb(12, 11, 11);
-    font-size: 30px;
-}
-/**/
-.button{
-    padding: 200px 0px 0px 0px;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-/**/
-.collection{
-    border: 1px solid transparent;
-    color: #000000;
-    text-decoration: none;
-    transition: 0.6s ease;
-    cursor: pointer;
-    font-size: 20px;
-    height: 70px;
-    width: 200px;
-    margin: 30px 0px 0px 30px;
-    box-shadow: 3px 3px 3px black;
-}
-/**/
-.collection:hover{
-    background-color: #11586A;
-    color: #fff
+/*IMAGES*/
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.container{
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    line-height: 300px;
+.products {
+  display: block;
+  margin: 15px;
+  width: -1000px;
+  align-items: center;
 }
 
-.image-container{
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1800px;
-    align-items: center;
+.products img {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+/*NAME OF SPECIFIC JACKETS*/
+.desc {
+  margin-top: 5px;
+  background: #11586a;
+  text-align: center;
+  font-size: 24px;
+  color: white;
 }
 
-.products{
-    display: block;
-    float: left;
-    margin: 15px;
-    width: -1000px;
-    height: -1000px;
-    align-items: center;
+.overlay-container {
+  position: relative;
 }
 
-.products img{
-    width: 300px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
+/*OVERLAY IMAGES/COLLECTIONS*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #ece2e2a3;
+  transition: 0.5s ease;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.products img:hover{
-    transform:scale(1.015);
-    opacity: 0.8;
+.overlay-container:hover .overlay {
+  opacity: 1;
 }
-.desc{
-    margin-top: 5px;
-    background: #11586A;
-    text-align: center;
-    font-size: 24px;
-    color: white;
+/*BUTTONS INSIDE IMAGE*/
+.size-button {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 10px;
+  border: 2px solid grey;
+  align-self: center;
+  height: 30px;
+  width: 70px;
+  font-size: 22px;
+  font-weight: bold;
+  color: gray;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
-
-body{
-    background: #fff;
-}
-
-h1{
-    text-align: justify;
-    font-size: 60px;
-    background: darkblue;
-    vertical-align: middle;
-    height: 500px;
-}
-
-h2{
-    display: flex;
-    justify-content: center;
-    margin-top: 250px;
-    font-size: 18px;
-    background: darkred;
+/*BUTTONS INSIDE IMAGE ON HOVER*/
+.size-button:hover {
+  background-color: #9ad3d3;
 }
 
-.about-section{
-    background: darkslategrey;
-    top: 50%;
-    left: 50%;
-    translate: translate(-50%,-50%);
+.size-button a {
+  text-decoration: none;
+  color: gray;
+}
+/*FOOTER BOTTOM OF PAGE*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  background-color: rgb(216, 207, 207);
+}
+
+.fbicon {
+  margin: 10px 10px 10px 10px;
+}
+
+.igicon {
+  margin: 10px 10px 10px 10px;
+}
+
+.twicon {
+  margin: 10px 10px 10px 10px;
+}
+/*ICONS ON HOVER*/
+.fbicon:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.igicon:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.twicon:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+  cursor: pointer;
+}
+/*ABOUT PAGE*/
+.about-div {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 300px;
+}
+
+.about-section {
+  margin-bottom: 150px;
+}
+
+.writing-container {
+  display: flex;
+  justify-content: center;
+}
+
+.writing {
+  width: 600px;
+  text-align: justify;
 }

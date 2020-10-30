@@ -1,32 +1,14 @@
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  background: purple;
-  display: flex;
-  justify-content: center;
+.left-side{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
 }
-  
-div.gallery:hover {
-  border: 1px solid #777;
-  background: red;
+
+.right-side{
+    display: flex;
 }
-  
-div.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  background: royalblue;
-  height: 250px;
-  left: 50%;
-  margin-top: -125px;
-  margin-left: -125px;
-  top: 50%;
-  width: 250px;
-}
-  
-div.desc {
-  padding: 15px;
-  text-align: center;
-  background: skyblue;
+
+.nav-wrapper > .right-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
 }
