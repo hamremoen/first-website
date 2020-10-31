@@ -5,10 +5,11 @@
 }
 /*homepage background image*/
 .homepage {
-  background-image: url(images/background1.jpg);
-  height: 100vh;
+  background-image: url(images/backgroundmaybe.jpg);
+  height: 80vh;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -40,7 +41,7 @@
   display: inline-block;
   padding: 5px 20px;
 }
-/*navigation bar hoverstate*/
+
 ul li a {
   text-decoration: none;
   color: black;
@@ -49,20 +50,12 @@ ul li a {
   transition: 0.6s ease;
   cursor: pointer;
 }
-
+/*navigation bar hoverstate*/
 ul li a:hover {
   background-color: #11586a;
   color: #fff;
 }
 
-.navigation input[type="text"] {
-  padding-top: 8px;
-  float: right;
-  width: 150px;
-  border: none;
-  font-size: 20px;
-  background-color: #fff;
-}
 /*HOMEPAGE SPECIFIC*/
 /*center of website quote/buttons*/
 .button-section {
@@ -73,33 +66,32 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   font-size: 40px;
+
+}
+.possibilities {
   line-height: 300px;
 }
 /*WEBSITE BUTTON*/
 .m-collection {
+  background: #ECEDEF;
   border-radius: 10px;
   border: 1px solid transparent;
-  color: #000000;
-  text-decoration: none;
   transition: 0.6s ease;
   cursor: pointer;
   font-size: 20px;
   height: 80px;
   width: 300px;
-  margin: 30px 0px 0px 30px;
   box-shadow: 3px 3px 3px black;
 }
 .w-collection {
+  background: #ECEDEF;
   border-radius: 10px;
   border: 1px solid transparent;
-  color: #000000;
-  text-decoration: none;
   transition: 0.6s ease;
   cursor: pointer;
   font-size: 20px;
   height: 80px;
   width: 300px;
-  margin: 30px 0px 0px 30px;
   box-shadow: 3px 3px 3px black;
 }
 /*center of website button hover*/
@@ -114,17 +106,15 @@ ul li a:hover {
 }
 /*END OF HOMEPAGE SPECIFIC*/
 body {
-  background: #fff;
+  background: #ECEDEF;
 }
 /*COLLECTION SPECIFIC*/
 /*TITLE COLLECTION*/
 .container {
-  width: 100%;
-  height: 250px;
   display: flex;
   justify-content: center;
   font-size: 40px;
-  line-height: 300px;
+  line-height: 150px;
 }
 /*IMAGES*/
 .image-container {
@@ -212,8 +202,7 @@ body {
 .contact {
   display: flex;
   justify-content: center;
-  margin-top: 300px;
-  background-color: rgb(216, 207, 207);
+  margin-bottom: 10px;
 }
 
 .fbicon {
@@ -280,8 +269,6 @@ body {
   font-size: 20px;
   height: 65px;
   width: 250px;
-  margin: 15px 0px 0px 30px;
-  display: inline-block;
   cursor: pointer;
 }
 
@@ -312,7 +299,7 @@ body {
 .my-items-container {
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 150px;
   flex-direction: column;
 }
 
@@ -321,23 +308,151 @@ body {
   justify-content: center;
   margin: 20px 20px 20px 20px;
   font-size: 28px;
-  background: rgb(216, 207, 207);
 }
 
 .my-items-button {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .items-button {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  font-size: 30px;
+  margin-top: 30px;
+  background: #11586a;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+  cursor: pointer;
+  font-size: 20px;
+  height: 80px;
+  width: 300px;
 }
 
 .items-button:hover {
-  background: rgb(194, 24, 24);
+  background: burlywood;
+}
+/*TABLET/MOBILE FRIENDLY*/
+/*homepage*/
+@media only screen and (max-width: 800px) {
+  .logo-container {
+    display: none
+  }
+  
+  .logo-container img {
+    display: none
+  }
+  .navbar{
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    padding-top: 30px;
+    background: burlywood;
+  }
+  .button-section {
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
-/*TESTTEST*/
+@media only screen and (max-width: 600px) {
+  .homepage{
+  background-image: none;
+  }
+
+  .header {
+    display: center;
+  }
+  .navigation li {
+    display: inline-block;
+    padding: none;
+}
+  .homepage-quote {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+}
+.m-collection {
+  background: #ECEDEF;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+  cursor: pointer;
+  font-size: 14px;
+  height: 50px;
+  width: 180px;
+  box-shadow: 3px 3px 3px black;
+}
+.w-collection {
+  background: #ECEDEF;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+  cursor: pointer;
+  font-size: 14px;
+  height: 50px;
+  width: 180px;
+  box-shadow: 3px 3px 3px black;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  .homepage{
+    background-image: none;
+    }
+  
+    .header {
+      display: center;
+    }
+    .navigation li {
+      display: inline-block;
+      padding: none;
+  }
+    .homepage-quote {
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+      line-height: 50px;
+      margin-top: 50px;
+      text-align: center;
+      width: auto;
+      margin: 0 auto;
+  }
+  .m-collection {
+    background: #ECEDEF;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    cursor: pointer;
+    font-size: 14px;
+    height: 50px;
+    width: 180px;
+    box-shadow: 3px 3px 3px black;
+  }
+  .w-collection {
+    background: #ECEDEF;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    cursor: pointer;
+    font-size: 14px;
+    height: 50px;
+    width: 180px;
+    box-shadow: 3px 3px 3px black;
+  }
+  .homepage-quote {
+    font-size: 15px;
+}
+.button-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}​
+}
