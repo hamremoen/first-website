@@ -1,4 +1,4 @@
-HTML/CSS CA Planning
+# HTML/CSS CA Planning
 
 Get every picture into the "images" file.
 Make an Index.html and Rainydays.css file.
@@ -27,4 +27,3 @@ jacket section (hover to pick size) did not work in mobile/tablet, have to redo
 my items payment method (to open pop-up) literally impossible, have to move on
 
 search bar in "navbar" (looks dreadful, cant place it on the same line as the other content), moving on
-
