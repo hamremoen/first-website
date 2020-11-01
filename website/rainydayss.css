@@ -5,7 +5,7 @@
 }
 /*homepage background image*/
 .homepage {
-  background-image: url(images/backgroundmaybe.jpg);
+  background-image: url(images/background1.jpg);
   height: 80vh;
   background-size: cover;
   background-position: center;
@@ -99,6 +99,7 @@ ul li a:hover {
   color: #fff;
 }
 /*END OF HOMEPAGE SPECIFIC*/
+/*REST OF WEBSITE BACKGROUND*/
 body {
   background: #ecedef;
 }
@@ -118,17 +119,11 @@ body {
   justify-content: center;
 }
 .image-container {
-  margin: 0.5vw;
-  font-size: 0;
   flex-flow: row wrap;
   display: flex;
   justify-content: center;
 }
 .image-container div {
-  display: flex;
-  justify-content: center;
-  flex: auto;
-  width: 50%;
   margin: 0.5vw;
 }
 .image-container div img {
@@ -193,27 +188,21 @@ body {
   width: 600px;
   text-align: justify;
 }
-/*ADDTOCART page*/
-.methods {
+/*ADDTOCART//SHARES SAME TITLE AS MENS/WOMENS page*/
+.a2c-image-container {
+  flex-flow: row wrap;
   display: flex;
+  justify-content: center;
 }
-.add-to-cart {
-  border-radius: 10px;
-  border: 1px solid transparent;
-  color: #000000;
-  font-size: 20px;
-  height: 65px;
-  width: 250px;
-  cursor: pointer;
+.a2c-image-container div {
+  display: flex;
+  justify-content: center;
+  margin: 0.5vw;
 }
-.add-to-cart:hover {
-  background-color: #11586a;
-  color: #fff;
-}
-.methods .jacket-information {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.a2c-image-container img {
+  width: 100;
+  height: auto;
+  margin-bottom: 100px;
 }
 /*MY ITEMS/CHECKOUT*/
 .my-items-div {
@@ -243,6 +232,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 150px;
 }
 .items-button {
   margin-top: 30px;
@@ -258,10 +248,15 @@ body {
 .items-button:hover {
   background: burlywood;
 }
+/*SIZE BUTTONS ADDTOCART*/
+.size {
+  background: darkblue;
+  flex-direction: column;
+  margin: 5px 5px 5px 5px;
+}
+
 /*TABLET/MOBILE FRIENDLY*/
 /*homepage*/
-@media only screen and (max-width: 1300px) {
-}
 @media only screen and (max-width: 800px) {
   .logo-container {
     display: none;
@@ -281,12 +276,14 @@ body {
     width: auto;
     margin: 0 auto;
   }
+  ul li a {
+    padding: 5px 5px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .homepage {
     background-image: none;
   }
-
   .header {
     display: center;
   }
@@ -326,11 +323,14 @@ body {
     width: 180px;
     box-shadow: 3px 3px 3px black;
   }
-/*ABOUT SECTION WRITING MINIMIZED*/
+  ul li a {
+    padding: 5px 0px;
+  }
+  /*ABOUT SECTION WRITING MINIMIZED*/
   .writing {
-    width: 450px;
     text-align: justify;
-}
+    width: 450px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .homepage {
@@ -344,14 +344,7 @@ body {
     padding: none;
   }
   .homepage-quote {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    line-height: 50px;
-    margin-top: 50px;
-    text-align: center;
-    width: auto;
-    margin: 0 auto;
+    font-size: 15px;
   }
   .m-collection {
     font-size: 14px;
@@ -362,14 +355,20 @@ body {
     font-size: 14px;
     height: 50px;
     width: 180px;
-    
-  }
-  .homepage-quote {
-    font-size: 15px;
   }
   /*ABOUT PAGE ON 300PX*/
   .writing {
     width: 300px;
-    text-align: justify;
-}
+  }
+  /*CARTPAGE ON 300PX*/
+  .my-items-title {
+    font-size: 28px;
+  }
+  .my-items-writing {
+    font-size: 18px;
+  }
+  .items-button {
+    height: 60px;
+    width: 220px;
+  }
 }
