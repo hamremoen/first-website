@@ -11,7 +11,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -22,7 +21,6 @@
   margin-left: 25px;
   width: 500px;
 }
-
 .logo-container img {
   cursor: pointer;
   width: 40%;
@@ -33,7 +31,6 @@
   justify-content: center;
   flex-direction: column;
 }
-
 .navigation {
   display: flex;
 }
@@ -41,7 +38,6 @@
   display: inline-block;
   padding: 5px 20px;
 }
-
 ul li a {
   text-decoration: none;
   color: black;
@@ -55,7 +51,6 @@ ul li a:hover {
   background-color: #11586a;
   color: #fff;
 }
-
 /*HOMEPAGE SPECIFIC*/
 /*center of website quote/buttons*/
 .button-section {
@@ -66,14 +61,13 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   font-size: 40px;
-
 }
 .possibilities {
   line-height: 300px;
 }
 /*WEBSITE BUTTON*/
 .m-collection {
-  background: #ECEDEF;
+  background: #ecedef;
   border-radius: 10px;
   border: 1px solid transparent;
   transition: 0.6s ease;
@@ -84,7 +78,7 @@ ul li a:hover {
   box-shadow: 3px 3px 3px black;
 }
 .w-collection {
-  background: #ECEDEF;
+  background: #ecedef;
   border-radius: 10px;
   border: 1px solid transparent;
   transition: 0.6s ease;
@@ -106,90 +100,41 @@ ul li a:hover {
 }
 /*END OF HOMEPAGE SPECIFIC*/
 body {
-  background: #ECEDEF;
+  background: #ecedef;
 }
-/*COLLECTION SPECIFIC*/
-/*TITLE COLLECTION*/
+/*MENS/WOMENS SPECIFIC*/
 .container {
   display: flex;
   justify-content: center;
   font-size: 40px;
-  line-height: 150px;
+  text-align: center;
+  width: min-content;
+  margin: 0 auto;
+  font-size: 44px;
+  margin: 25px 25px 25px 25px;
 }
-/*IMAGES*/
+.section-container {
+  display: flex;
+  justify-content: center;
+}
 .image-container {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.products {
-  display: block;
-  margin: 15px;
-  width: -1000px;
-  align-items: center;
-}
-
-.products img {
-  width: 300px;
-  height: 400px;
+  margin: 0.5vw;
+  font-size: 0;
+  flex-flow: row wrap;
   display: flex;
   justify-content: center;
 }
-/*NAME OF SPECIFIC JACKETS*/
-.desc {
-  margin-top: 5px;
-  background: #11586a;
-  text-align: center;
-  font-size: 24px;
-  color: white;
-}
-
-.overlay-container {
-  position: relative;
-}
-
-/*OVERLAY IMAGES/COLLECTIONS*/
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: #ece2e2a3;
-  transition: 0.5s ease;
-  opacity: 0;
+.image-container div {
   display: flex;
   justify-content: center;
+  flex: auto;
+  width: 50%;
+  margin: 0.5vw;
 }
-
-.overlay-container:hover .overlay {
-  opacity: 1;
-}
-/*BUTTONS INSIDE IMAGE*/
-.size-button {
-  display: inline-block;
-  padding: 10px;
-  margin: 5px 10px;
-  border: 5px solid rgb(66, 67, 75);
-  align-self: top;
-  height: 30px;
-  width: 70px;
-  font-size: 22px;
-  font-weight: bold;
-  color: gray;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-/*BUTTONS INSIDE IMAGE ON HOVER*/
-.size-button:hover {
-  background-color: rgb(66, 67, 75);
-}
-
-.size-button a {
-  text-decoration: none;
-  color: whitesmoke;
+.image-container div img {
+  width: 100;
+  height: auto;
+  margin-bottom: 100px;
 }
 /*FOOTER BOTTOM OF PAGE*/
 .footer {
@@ -198,37 +143,31 @@ body {
   left: 0;
   right: 0;
 }
-
 .contact {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
-
 .fbicon {
   margin: 10px 10px 10px 10px;
 }
-
 .igicon {
   margin: 10px 10px 10px 10px;
 }
-
 .twicon {
   margin: 10px 10px 10px 10px;
 }
-/*ICONS ON HOVER*/
+/*FOOTER-ICONS ON HOVER*/
 .fbicon:hover {
   transform: scale(1.2);
   opacity: 0.5;
   cursor: pointer;
 }
-
 .igicon:hover {
   transform: scale(1.2);
   opacity: 0.5;
   cursor: pointer;
 }
-
 .twicon:hover {
   transform: scale(1.2);
   opacity: 0.5;
@@ -243,25 +182,21 @@ body {
   font-size: 40px;
   line-height: 300px;
 }
-
 .about-section {
   margin-bottom: 150px;
 }
-
 .writing-container {
   display: flex;
   justify-content: center;
 }
-
 .writing {
   width: 600px;
   text-align: justify;
 }
-/*addtocart page*/
+/*ADDTOCART page*/
 .methods {
   display: flex;
 }
-
 .add-to-cart {
   border-radius: 10px;
   border: 1px solid transparent;
@@ -271,12 +206,10 @@ body {
   width: 250px;
   cursor: pointer;
 }
-
 .add-to-cart:hover {
   background-color: #11586a;
   color: #fff;
 }
-
 .methods .jacket-information {
   position: absolute;
   top: 50%;
@@ -291,31 +224,26 @@ body {
   font-size: 40px;
   line-height: 300px;
 }
-
 .my-items-title {
   font-size: 44px;
 }
-
 .my-items-container {
   display: flex;
   justify-content: center;
   height: 150px;
   flex-direction: column;
 }
-
 .my-items-writing {
   display: flex;
   justify-content: center;
   margin: 20px 20px 20px 20px;
   font-size: 28px;
 }
-
 .my-items-button {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
 .items-button {
   margin-top: 30px;
   background: #11586a;
@@ -327,21 +255,21 @@ body {
   height: 80px;
   width: 300px;
 }
-
 .items-button:hover {
   background: burlywood;
 }
 /*TABLET/MOBILE FRIENDLY*/
 /*homepage*/
+@media only screen and (max-width: 1300px) {
+}
 @media only screen and (max-width: 800px) {
   .logo-container {
-    display: none
+    display: none;
   }
-  
   .logo-container img {
-    display: none
+    display: none;
   }
-  .navbar{
+  .navbar {
     text-align: center;
     width: auto;
     margin: 0 auto;
@@ -354,10 +282,9 @@ body {
     margin: 0 auto;
   }
 }
-
 @media only screen and (max-width: 600px) {
-  .homepage{
-  background-image: none;
+  .homepage {
+    background-image: none;
   }
 
   .header {
@@ -366,7 +293,7 @@ body {
   .navigation li {
     display: inline-block;
     padding: none;
-}
+  }
   .homepage-quote {
     display: flex;
     justify-content: center;
@@ -376,55 +303,9 @@ body {
     text-align: center;
     width: auto;
     margin: 0 auto;
-}
-.m-collection {
-  background: #ECEDEF;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  transition: 0.6s ease;
-  cursor: pointer;
-  font-size: 14px;
-  height: 50px;
-  width: 180px;
-  box-shadow: 3px 3px 3px black;
-}
-.w-collection {
-  background: #ECEDEF;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  transition: 0.6s ease;
-  cursor: pointer;
-  font-size: 14px;
-  height: 50px;
-  width: 180px;
-  box-shadow: 3px 3px 3px black;
-}
-}
-
-@media only screen and (max-width: 400px) {
-  .homepage{
-    background-image: none;
-    }
-  
-    .header {
-      display: center;
-    }
-    .navigation li {
-      display: inline-block;
-      padding: none;
-  }
-    .homepage-quote {
-      display: flex;
-      justify-content: center;
-      font-size: 25px;
-      line-height: 50px;
-      margin-top: 50px;
-      text-align: center;
-      width: auto;
-      margin: 0 auto;
   }
   .m-collection {
-    background: #ECEDEF;
+    background: #ecedef;
     border-radius: 10px;
     border: 1px solid transparent;
     transition: 0.6s ease;
@@ -435,7 +316,7 @@ body {
     box-shadow: 3px 3px 3px black;
   }
   .w-collection {
-    background: #ECEDEF;
+    background: #ecedef;
     border-radius: 10px;
     border: 1px solid transparent;
     transition: 0.6s ease;
@@ -445,14 +326,50 @@ body {
     width: 180px;
     box-shadow: 3px 3px 3px black;
   }
+/*ABOUT SECTION WRITING MINIMIZED*/
+  .writing {
+    width: 450px;
+    text-align: justify;
+}
+}
+@media only screen and (max-width: 400px) {
+  .homepage {
+    background-image: none;
+  }
+  .header {
+    display: center;
+  }
+  .navigation li {
+    display: inline-block;
+    padding: none;
+  }
+  .homepage-quote {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+  }
+  .m-collection {
+    font-size: 14px;
+    height: 50px;
+    width: 180px;
+  }
+  .w-collection {
+    font-size: 14px;
+    height: 50px;
+    width: 180px;
+    
+  }
   .homepage-quote {
     font-size: 15px;
+  }
+  /*ABOUT PAGE ON 300PX*/
+  .writing {
+    width: 300px;
+    text-align: justify;
 }
-.button-div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-}​
 }
