@@ -47,7 +47,7 @@ ul li a:hover {
   background-color: #11586a;
   color: #fff;
 }
-
+/*PICSJURES*/
 .gallery-section {
   width: 100%;
   padding: 60px 0;
@@ -163,23 +163,23 @@ ul li a:hover {
   width: 100%;
   padding: 60px 0;
   display: flex;
-  justify-content: center;
 }
 
 .opening_width{
-
+  width: 100%;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
 }
 
-.border_opening {
-  
 
-}
 
 /*contact FORM*/
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin: 25px;
   max-width: 1100px;
   font-size: 24px;
 }
